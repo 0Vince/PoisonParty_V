@@ -25,9 +25,13 @@ public class Interactor : MonoBehaviour
         switch (_colliders[0].name)
         {
             case "ChessInteract":
-                Debug.Log("inot chessinteract");
+                Debug.Log("Starting Chess Game");
                 SceneManager.LoadScene("ChessScene");
                 break;
+            case "CheckersInteract":
+                            Debug.Log("Starting Checkers Game");
+                            SceneManager.LoadScene("CheckersBoard");
+                            break;
             
         }
     }
